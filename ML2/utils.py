@@ -1,12 +1,10 @@
-# ML HW 3 
-
-import pdb
+# ML HW 3
 import operator
 from collections import defaultdict
 
-
-CONF_OF_INTEREST = ['IJCAI', 'AAAI', 'COLT', 'CVPR', 
+CONF_OF_INTEREST = ['IJCAI', 'AAAI', 'COLT', 'CVPR',
                     'NIPS', 'KR', 'SIGIR', 'KDD']
+
 
 def load_data():
     data_file = './FilteredDBLP.txt'
@@ -27,7 +25,7 @@ def load_data():
                 entry['author'].append(line[1])
 
             elif line[0] == 'Conference':
-                ## Filter out confs out of interest
+                # Filter out confs out of interest
                 conf_index = [i in line[1].upper() for i in CONF_OF_INTEREST]
                 if True in conf_index:
                     value = CONF_OF_INTEREST[conf_index.index(True)]
@@ -41,14 +39,16 @@ def load_data():
 
     return data
 
+
 def get_filtered_data(data, key, values):
     if type(values) is not list:
         raise Exception('Values should be a list!')
 
     if key == 'author':
-        return [i for i in data if not set(i[key]).isdisjoint(values)] 
+        return [i for i in data if not set(i[key]).isdisjoint(values)]
     else:
-        return [i for i in data if i[key] in values] 
+        return [i for i in data if i[key] in values]
+
 
 def get_values(data, key):
     values = set()
@@ -56,18 +56,23 @@ def get_values(data, key):
         values.add(data[i][key])
     return values
 
+
 def get_counts(data, key, values):
     return len(get_filtered_data(data, key, values))
+
 
 def get_baskets(data, key):
     return [i[key] for i in data]
 
+
 def get_sorted_patterns(patterns):
-    return sorted(patterns.items(), 
-                    key=operator.itemgetter(1), reverse=True)
+    return sorted(patterns.items(),
+                  key=operator.itemgetter(1), reverse=True)
+
 
 def get_team_data(data, team):
     return [i for i in data if set(i['author']) >= set(team)]
+
 
 def remove_unclosed_items(patterns):
     keys_to_remove = []
@@ -78,18 +83,16 @@ def remove_unclosed_items(patterns):
     for key in keys_to_remove:
         patterns.pop(key)
 
+
 def get_ranked_keyword_frequency(sentences, keywords):
     frequency_dist = defaultdict(lambda: 0)
     for keyword in keywords:
         for sentence in sentences:
             if keyword in sentence:
                 frequency_dist[keyword] += 1
-    return sorted(frequency_dist.items(), 
-                    key=operator.itemgetter(1), reverse=True)
+    return sorted(frequency_dist.items(),
+                  key=operator.itemgetter(1), reverse=True)
 
 
 def print_divider(char, txt):
-    print('\n' + char*30 + ' ' + txt + ' ' + char*30 + '\n')
-
-
-
+    print('\n' + char * 30 + ' ' + txt + ' ' + char * 30 + '\n')

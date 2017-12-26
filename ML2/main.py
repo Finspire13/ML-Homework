@@ -1,5 +1,4 @@
-# ML HW 3 
-
+# ML HW 3
 from utils import *
 import pyfpgrowth
 import nltk
@@ -21,12 +20,12 @@ for conf in sorted_confs:
     # Get frequent  itenset
     patterns = pyfpgrowth.find_frequent_patterns(baskets, 2)
     # Get only 1-itemset
-    patterns = dict((k,v) for k, v in patterns.items() if len(k) == 1)
+    patterns = dict((k, v) for k, v in patterns.items() if len(k) == 1)
     # Sort by frequency
     patterns = get_sorted_patterns(patterns)
     # Get top 5 supporters
     patterns = patterns[:5]
-    
+
     supporter = [p[0][0] for p in patterns]
     supporters[conf] = supporter
 
@@ -44,7 +43,6 @@ for conf in sorted_confs:
             count = get_counts(author_data, key='year', values=[year])
             yearly_counts[conf][author].append(count)
 
-
 # Print supporters for each conference
 print_divider('=', 'Question 1.1: Supporter')
 for key, value in supporters.items():
@@ -52,21 +50,20 @@ for key, value in supporters.items():
 
 # Print paper counts of supporters in each year
 print_divider('=', 'Question 1.1: Yearly Counts')
-for key, value in yearly_counts.items():
-    print('{}:'.format(key))
-    for key, value in value.items():
-        print('{}: {}'.format(key, value))
+for key1, value1 in yearly_counts.items():
+    print('{}:'.format(key1))
+    for key2, value2 in value1.items():
+        print('{}: {}'.format(key2, value2))
     print(' ')
 
 # Print inactive supporters
 print_divider('=', 'Question 1.1: Inactive')
-for key, value in yearly_counts.items():
-    print('{}:'.format(key))
-    for key, value in value.items():
-        if sum(value[-2:]) <= 0.1*sum(value):
-            print('{}'.format(key))
+for key1, value1 in yearly_counts.items():
+    print('{}:'.format(key1))
+    for key2, value2 in value1.items():
+        if sum(value2[-2:]) <= 0.1 * sum(value2):
+            print('{}'.format(key2))
     print(' ')
-
 
 ####################### Question 1.2 ##############################
 
@@ -74,7 +71,7 @@ for key, value in yearly_counts.items():
 baskets = get_baskets(data, 'author')
 patterns = pyfpgrowth.find_frequent_patterns(baskets, 10)
 # Get only teams of more than 3 person
-patterns = dict((k,v) for k, v in patterns.items() if len(k) >= 3)
+patterns = dict((k, v) for k, v in patterns.items() if len(k) >= 3)
 # Remove duplicate
 remove_unclosed_items(patterns)
 # Sort by frequency
@@ -86,7 +83,6 @@ print_divider('=', 'Question 1.2: Frequent Teams')
 for entry in patterns:
     print('{}: {}'.format(entry[0], entry[1]))
 
-
 ####################### Question 2.1 ##############################
 
 # Get keywords using RAKE
@@ -94,7 +90,7 @@ titles = get_values(data, 'title')
 titles = sorted(titles)
 
 stopwords = nltk.corpus.stopwords.words('english')
-extra_stopwords = ['using', 'via', 'without', 
+extra_stopwords = ['using', 'via', 'without',
                    'towards', 'toward', 'based']
 stopwords += extra_stopwords
 
@@ -103,10 +99,9 @@ extractor.extract_keywords_from_sentences(titles)
 
 keywords = extractor.get_ranked_phrases()
 # Only using keywords with less than 5 words
-keywords = [k for k in keywords if len(k.split())<=5]
+keywords = [k for k in keywords if len(k.split()) <= 5]
 # Get 45000 keywords
 keywords = keywords[:42500]
-
 
 # Get keyword of each team's research
 print_divider('=', 'Question 2.1: Team Insterests')
@@ -120,11 +115,10 @@ for team in teams:
     for entry in team_freq:
         print('{}: {}'.format(entry[0], entry[1]))
 
-
 ####################### Question 2.2 ##############################
 
-fisrt_half_years = sorted_years[:len(sorted_years)//2]
-second_half_years = sorted_years[len(sorted_years)//2:]
+fisrt_half_years = sorted_years[:len(sorted_years) // 2]
+second_half_years = sorted_years[len(sorted_years) // 2:]
 
 print_divider('=', 'Question 2.2: Team Insterests in Two Periods')
 for team in teams:
