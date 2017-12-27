@@ -1,0 +1,486 @@
+============================== Question 1.1: Supporter ==============================
+
+SIGIR: ['Maarten de Rijke', 'Ryen W. White', 'Leif Azzopardi', 'W. Bruce Croft', 'Craig Macdonald']
+KDD: ['Jiawei Han 0001', 'Jieping Ye', 'Christos Faloutsos', 'Hui Xiong', 'Hanghang Tong']
+NIPS: ['Michael I. Jordan', 'Lawrence Carin', 'Pradeep Ravikumar', 'Francis R. Bach', 'Ruslan Salakhutdinov']
+AAAI: ['Qiang Yang 0001', 'Milind Tambe', 'Feiping Nie', 'Zhi-Hua Zhou', 'Tuomas Sandholm']
+CVPR: ['Shuicheng Yan', 'Xiaoou Tang', 'Xiaogang Wang', 'Luc J. Van Gool', 'Bernt Schiele']
+COLT: ['Alexander Rakhlin', 'Maria-Florina Balcan', 'Manfred K. Warmuth', 'Yishay Mansour', 'Shai Shalev-Shwartz']
+IJCAI: ['Feiping Nie', 'Zhi-Hua Zhou', 'Nicholas R. Jennings', 'Dacheng Tao', 'Toby Walsh']
+KR: ['Stefan Woltran', 'Carsten Lutz', 'Sébastien Konieczny', 'Giuseppe De Giacomo', 'Hector J. Levesque']
+
+============================== Question 1.1: Yearly Counts ==============================
+
+SIGIR:
+Ryen W. White: [5, 3, 2, 5, 5, 7, 7, 6, 1, 1, 1]
+W. Bruce Croft: [6, 4, 2, 6, 3, 4, 3, 3, 2, 2, 5]
+Maarten de Rijke: [3, 7, 0, 4, 3, 2, 7, 9, 10, 8, 8]
+Leif Azzopardi: [4, 0, 6, 7, 3, 4, 3, 2, 5, 3, 4]
+Craig Macdonald: [1, 4, 5, 1, 5, 6, 3, 2, 6, 5, 1]
+ 
+KDD:
+Christos Faloutsos: [5, 6, 7, 1, 5, 7, 2, 4, 3, 4, 3]
+Hui Xiong: [4, 2, 2, 1, 3, 0, 1, 5, 2, 9, 8]
+Hanghang Tong: [2, 2, 1, 1, 3, 3, 0, 2, 4, 3, 4]
+Jiawei Han 0001: [1, 4, 4, 4, 3, 6, 8, 3, 10, 5, 5]
+Jieping Ye: [2, 5, 4, 3, 4, 7, 5, 4, 7, 7, 4]
+ 
+NIPS:
+Lawrence Carin: [1, 0, 3, 1, 3, 2, 4, 5, 6, 4, 10]
+Francis R. Bach: [2, 5, 2, 4, 4, 2, 3, 2, 2, 5, 3]
+Michael I. Jordan: [3, 7, 3, 5, 2, 4, 6, 4, 4, 2, 5]
+Pradeep Ravikumar: [1, 2, 2, 1, 4, 2, 6, 9, 7, 1, 2]
+Ruslan Salakhutdinov: [2, 1, 3, 2, 3, 5, 5, 2, 3, 6, 1]
+ 
+AAAI:
+Tuomas Sandholm: [2, 5, 0, 3, 0, 2, 3, 5, 7, 2, 3]
+Zhi-Hua Zhou: [2, 2, 0, 4, 2, 2, 1, 5, 3, 6, 6]
+Milind Tambe: [0, 3, 0, 2, 2, 5, 1, 6, 7, 8, 0]
+Feiping Nie: [0, 1, 0, 1, 2, 1, 3, 4, 4, 5, 12]
+Qiang Yang 0001: [5, 7, 0, 5, 4, 4, 1, 1, 4, 3, 3]
+ 
+CVPR:
+Shuicheng Yan: [2, 6, 6, 7, 4, 7, 6, 7, 7, 5, 10]
+Xiaoou Tang: [10, 5, 3, 4, 6, 4, 4, 4, 9, 7, 4]
+Luc J. Van Gool: [2, 9, 1, 8, 7, 5, 7, 8, 7, 3, 0]
+Xiaogang Wang: [2, 2, 1, 0, 5, 5, 6, 7, 8, 9, 12]
+Bernt Schiele: [1, 2, 4, 5, 3, 4, 2, 4, 8, 8, 12]
+ 
+COLT:
+Maria-Florina Balcan: [3, 2, 2, 1, 0, 0, 1, 0, 2, 3, 1]
+Yishay Mansour: [1, 0, 3, 2, 0, 0, 1, 0, 2, 2, 3]
+Alexander Rakhlin: [1, 3, 3, 0, 0, 0, 2, 1, 3, 1, 3]
+Manfred K. Warmuth: [2, 2, 1, 3, 0, 0, 2, 1, 3, 0, 0]
+Shai Shalev-Shwartz: [1, 1, 4, 3, 0, 0, 0, 2, 0, 1, 2]
+ 
+IJCAI:
+Toby Walsh: [4, 0, 3, 0, 1, 0, 5, 0, 6, 3, 2]
+Dacheng Tao: [0, 0, 0, 0, 1, 0, 3, 0, 3, 4, 13]
+Zhi-Hua Zhou: [1, 0, 3, 0, 4, 0, 5, 0, 4, 5, 8]
+Feiping Nie: [1, 0, 1, 0, 3, 0, 6, 0, 3, 5, 17]
+Nicholas R. Jennings: [4, 0, 5, 0, 3, 0, 6, 0, 3, 1, 4]
+ 
+KR:
+Carsten Lutz: [0, 1, 0, 5, 0, 3, 0, 2, 0, 1, 0]
+Sébastien Konieczny: [0, 3, 0, 2, 0, 3, 0, 2, 0, 1, 0]
+Giuseppe De Giacomo: [0, 3, 0, 2, 0, 3, 0, 0, 0, 3, 0]
+Stefan Woltran: [0, 2, 0, 4, 0, 3, 0, 1, 0, 2, 0]
+Hector J. Levesque: [0, 1, 0, 1, 0, 3, 0, 3, 0, 2, 0]
+ 
+
+============================== Question 1.1: Inactive ==============================
+
+SIGIR:
+Ryen W. White
+ 
+KDD:
+ 
+NIPS:
+Pradeep Ravikumar
+ 
+AAAI:
+ 
+CVPR:
+Luc J. Van Gool
+ 
+COLT:
+Manfred K. Warmuth
+ 
+IJCAI:
+ 
+KR:
+Carsten Lutz
+Sébastien Konieczny
+ 
+
+============================== Question 1.2: Frequent Teams ==============================
+
+('Min Zhang 0006', 'Shaoping Ma', 'Yiqun Liu'): 18
+('Feiping Nie', 'Heng Huang', 'Hua Wang'): 15
+('Chris H. Q. Ding', 'Feiping Nie', 'Heng Huang'): 13
+('Jiafeng Guo', 'Jun Xu', 'Xueqi Cheng', 'Yanyan Lan'): 12
+('Bart Selman', 'Carla P. Gomes', 'Stefano Ermon'): 11
+('Chang Xu', 'Chao Xu 0006', 'Dacheng Tao'): 11
+('Gang Chen 0001', 'Ke Chen 0005', 'Lidan Shou'): 10
+('Chris H. Q. Ding', 'Heng Huang', 'Hua Wang'): 10
+('Shiguang Shan', 'Wen Gao 0001', 'Xilin Chen'): 10
+
+============================== Question 2.1: Team Insterests ==============================
+
+
+------------------------------ ['Min Zhang 0006', 'Shaoping Ma', 'Yiqun Liu'] ------------------------------
+
+fraudulent action propagation: 1
+improve collaborative filtering: 1
+level sentiment labeling: 1
+level sentiment analysis: 1
+search behavior analysis: 1
+real customer service telephone conversation: 1
+community question answering: 1
+explicit factor models: 1
+boosted latent topics: 1
+predicting epidemic tendency: 1
+level sentiment classification: 1
+offline web search evaluation metrics: 1
+predicting search user examination: 1
+shilling attack detection: 1
+novel propagation method: 1
+crowdturfing following activities: 1
+search click models: 1
+domain expertise affect users: 1
+mouse movement information: 1
+fraudulent support telephone number identification: 1
+incorporating vertical results: 1
+predicting search satisfaction: 1
+bordered block diagonal form matrices: 1
+web search examination: 1
+grained role labeling: 1
+
+------------------------------ ['Feiping Nie', 'Heng Huang', 'Hua Wang'] ------------------------------
+
+nonnegative matrix tri: 2
+adaptive loss minimization: 1
+principal component analysis: 1
+learning instance specific distance: 1
+locality preserving projection: 1
+task feature learning: 1
+maximum margin multi: 1
+heterogeneous visual features fusion: 1
+scale data co: 1
+sparse multimodal machine: 1
+fast nonnegative matrix tri: 1
+language web page classification: 1
+early active learning: 1
+locally consistent unsupervised projection: 1
+web page classification: 1
+rank tensor completion: 1
+dual knowledge transfer: 1
+learning robust locality preserving projection: 1
+robust principal component analysis: 1
+identify longitudinal phenotypic markers: 1
+supervised elastic embedding: 1
+
+------------------------------ ['Chris H. Q. Ding', 'Feiping Nie', 'Heng Huang'] ------------------------------
+
+k matrix recovery: 2
+principal component analysis: 1
+rank matrix recovery: 1
+maximum margin multi: 1
+heterogeneous visual features fusion: 1
+positive semidefinite graph learning approach: 1
+social trust prediction: 1
+sparse multimodal machine: 1
+projected sparse coding: 1
+robust feature selection: 1
+language web page classification: 1
+early active learning: 1
+dual knowledge transfer: 1
+web page classification: 1
+closed form solution: 1
+linear discriminant analysis: 1
+adaptive loss minimization: 1
+robust principal component analysis: 1
+nonnegative matrix tri: 1
+rank linear regressions: 1
+supervised elastic embedding: 1
+
+------------------------------ ['Jiafeng Guo', 'Jun Xu', 'Xueqi Cheng', 'Yanyan Lan'] ------------------------------
+
+search result diversification: 2
+markov decision process: 2
+directly optimizing diversity evaluation measures: 1
+ℓ1 regularized online learning: 1
+sparse word embeddings: 1
+bursty topic discovery: 1
+recursive matching structure: 1
+neural tensor network: 1
+adapting markov decision process: 1
+multiple positional sentence representations: 1
+learning hierarchical representation model: 1
+learning maximal marginal relevance model: 1
+two jointly predictive models: 1
+
+------------------------------ ['Bart Selman', 'Carla P. Gomes', 'Stefano Ermon'] ------------------------------
+
+uncovering hidden structure: 3
+parallel problem decomposition: 3
+set basis problem: 2
+partition function computation: 1
+sustainable renewable resource allocation: 1
+flat histogram method: 1
+designing fast absorbing markov chains: 1
+solving marginal map problems: 1
+accelerated adaptive markov chain: 1
+absorbing markov chain: 1
+
+------------------------------ ['Chang Xu', 'Chao Xu 0006', 'Dacheng Tao'] ------------------------------
+
+sensitive feature selection: 1
+label image classification: 1
+measure optimization reduction: 1
+fast svm trained: 1
+convolutional neural networks: 1
+packing convolutional neural networks: 1
+convolutional neural network: 1
+label causal feature learning: 1
+multiple teacher networks: 1
+
+------------------------------ ['Gang Chen 0001', 'Ke Chen 0005', 'Lidan Shou'] ------------------------------
+
+personalized web search: 1
+novel recommendation system: 1
+knowing camera 2: 1
+visual keyword queries: 1
+situational music recommendation: 1
+physical search engine: 1
+efficient privacy protection: 1
+
+------------------------------ ['Chris H. Q. Ding', 'Heng Huang', 'Hua Wang'] ------------------------------
+
+principal component analysis: 1
+protein function prediction: 1
+maximum margin multi: 1
+heterogeneous visual features fusion: 1
+sparse multimodal machine: 1
+adaptive loss minimization: 1
+language web page classification: 1
+early active learning: 1
+dual knowledge transfer: 1
+web page classification: 1
+discriminant laplacian embedding: 1
+nonnegative matrix tri: 1
+robust principal component analysis: 1
+supervised elastic embedding: 1
+
+------------------------------ ['Shiguang Shan', 'Wen Gao 0001', 'Xilin Chen'] ------------------------------
+
+accurate face detection: 1
+principal component analysis: 1
+locally assembled binary: 1
+tunable gradients partition: 1
+single sample per person: 1
+face recognition across pose differences: 1
+enormous training set: 1
+generalized covariance matrix: 1
+adaptive generic learning: 1
+optimal discriminatory projection pursuit: 1
+face recognition across pose: 1
+unified principal component analysis: 1
+recognition across pose: 1
+
+============================== Question 2.2: Team Insterests in Two Periods ==============================
+
+
+------------------------------ ['Min Zhang 0006', 'Shaoping Ma', 'Yiqun Liu'] ------------------------------
+
+
+2007 - 2011: 1 papers published
+
+predicting epidemic tendency: 1
+search behavior analysis: 1
+
+2012 - 2017: 17 papers published
+
+fraudulent action propagation: 1
+improve collaborative filtering: 1
+level sentiment labeling: 1
+level sentiment analysis: 1
+real customer service telephone conversation: 1
+community question answering: 1
+explicit factor models: 1
+boosted latent topics: 1
+level sentiment classification: 1
+offline web search evaluation metrics: 1
+predicting search user examination: 1
+shilling attack detection: 1
+novel propagation method: 1
+crowdturfing following activities: 1
+search click models: 1
+domain expertise affect users: 1
+mouse movement information: 1
+fraudulent support telephone number identification: 1
+incorporating vertical results: 1
+predicting search satisfaction: 1
+bordered block diagonal form matrices: 1
+web search examination: 1
+grained role labeling: 1
+
+------------------------------ ['Feiping Nie', 'Heng Huang', 'Hua Wang'] ------------------------------
+
+
+2007 - 2011: 5 papers published
+
+nonnegative matrix tri: 2
+language web page classification: 1
+principal component analysis: 1
+learning instance specific distance: 1
+web page classification: 1
+scale data co: 1
+maximum margin multi: 1
+dual knowledge transfer: 1
+robust principal component analysis: 1
+fast nonnegative matrix tri: 1
+
+2012 - 2017: 10 papers published
+
+rank tensor completion: 1
+early active learning: 1
+locally consistent unsupervised projection: 1
+adaptive loss minimization: 1
+task feature learning: 1
+locality preserving projection: 1
+heterogeneous visual features fusion: 1
+learning robust locality preserving projection: 1
+identify longitudinal phenotypic markers: 1
+supervised elastic embedding: 1
+sparse multimodal machine: 1
+
+------------------------------ ['Chris H. Q. Ding', 'Feiping Nie', 'Heng Huang'] ------------------------------
+
+
+2007 - 2011: 4 papers published
+
+robust feature selection: 1
+language web page classification: 1
+principal component analysis: 1
+dual knowledge transfer: 1
+web page classification: 1
+maximum margin multi: 1
+nonnegative matrix tri: 1
+robust principal component analysis: 1
+
+2012 - 2017: 9 papers published
+
+k matrix recovery: 2
+rank matrix recovery: 1
+heterogeneous visual features fusion: 1
+positive semidefinite graph learning approach: 1
+social trust prediction: 1
+sparse multimodal machine: 1
+adaptive loss minimization: 1
+early active learning: 1
+closed form solution: 1
+linear discriminant analysis: 1
+projected sparse coding: 1
+rank linear regressions: 1
+supervised elastic embedding: 1
+
+------------------------------ ['Jiafeng Guo', 'Jun Xu', 'Xueqi Cheng', 'Yanyan Lan'] ------------------------------
+
+
+2007 - 2011: 0 papers published
+
+
+2012 - 2017: 12 papers published
+
+search result diversification: 2
+markov decision process: 2
+directly optimizing diversity evaluation measures: 1
+ℓ1 regularized online learning: 1
+sparse word embeddings: 1
+bursty topic discovery: 1
+recursive matching structure: 1
+neural tensor network: 1
+adapting markov decision process: 1
+multiple positional sentence representations: 1
+learning hierarchical representation model: 1
+learning maximal marginal relevance model: 1
+two jointly predictive models: 1
+
+------------------------------ ['Bart Selman', 'Carla P. Gomes', 'Stefano Ermon'] ------------------------------
+
+
+2007 - 2011: 3 papers published
+
+partition function computation: 1
+accelerated adaptive markov chain: 1
+flat histogram method: 1
+sustainable renewable resource allocation: 1
+
+2012 - 2017: 8 papers published
+
+uncovering hidden structure: 3
+parallel problem decomposition: 3
+set basis problem: 2
+designing fast absorbing markov chains: 1
+solving marginal map problems: 1
+absorbing markov chain: 1
+
+------------------------------ ['Chang Xu', 'Chao Xu 0006', 'Dacheng Tao'] ------------------------------
+
+
+2007 - 2011: 0 papers published
+
+
+2012 - 2017: 11 papers published
+
+sensitive feature selection: 1
+label image classification: 1
+measure optimization reduction: 1
+fast svm trained: 1
+convolutional neural networks: 1
+packing convolutional neural networks: 1
+convolutional neural network: 1
+label causal feature learning: 1
+multiple teacher networks: 1
+
+------------------------------ ['Gang Chen 0001', 'Ke Chen 0005', 'Lidan Shou'] ------------------------------
+
+
+2007 - 2011: 2 papers published
+
+personalized web search: 1
+efficient privacy protection: 1
+physical search engine: 1
+
+2012 - 2017: 8 papers published
+
+knowing camera 2: 1
+novel recommendation system: 1
+visual keyword queries: 1
+situational music recommendation: 1
+
+------------------------------ ['Chris H. Q. Ding', 'Heng Huang', 'Hua Wang'] ------------------------------
+
+
+2007 - 2011: 6 papers published
+
+language web page classification: 1
+principal component analysis: 1
+dual knowledge transfer: 1
+web page classification: 1
+discriminant laplacian embedding: 1
+maximum margin multi: 1
+nonnegative matrix tri: 1
+robust principal component analysis: 1
+
+2012 - 2017: 4 papers published
+
+early active learning: 1
+protein function prediction: 1
+heterogeneous visual features fusion: 1
+adaptive loss minimization: 1
+sparse multimodal machine: 1
+supervised elastic embedding: 1
+
+------------------------------ ['Shiguang Shan', 'Wen Gao 0001', 'Xilin Chen'] ------------------------------
+
+
+2007 - 2011: 10 papers published
+
+accurate face detection: 1
+principal component analysis: 1
+locally assembled binary: 1
+tunable gradients partition: 1
+single sample per person: 1
+face recognition across pose differences: 1
+enormous training set: 1
+generalized covariance matrix: 1
+adaptive generic learning: 1
+optimal discriminatory projection pursuit: 1
+face recognition across pose: 1
+unified principal component analysis: 1
+recognition across pose: 1
+
+2012 - 2017: 0 papers published
+
