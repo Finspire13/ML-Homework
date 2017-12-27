@@ -88,7 +88,7 @@ def get_ranked_keyword_frequency(sentences, keywords):
     frequency_dist = defaultdict(lambda: 0)
     for keyword in keywords:
         for sentence in sentences:
-            if keyword in sentence:
+            if keyword.lower() in sentence.lower():
                 frequency_dist[keyword] += 1
     return sorted(frequency_dist.items(),
                   key=operator.itemgetter(1), reverse=True)

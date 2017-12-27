@@ -100,8 +100,8 @@ extractor.extract_keywords_from_sentences(titles)
 keywords = extractor.get_ranked_phrases()
 # Only using keywords with less than 5 words
 keywords = [k for k in keywords if len(k.split()) <= 5]
-# Get 45000 keywords
-keywords = keywords[:42500]
+# Get 20000 keywords
+keywords = keywords[:20000]
 
 # Get keyword of each team's research
 print_divider('=', 'Question 2.1: Team Insterests')
@@ -117,7 +117,9 @@ for team in teams:
 
 ####################### Question 2.2 ##############################
 
-fisrt_half_years = sorted_years[:len(sorted_years) // 2]
+# 2007 - 2011
+first_half_years = sorted_years[:len(sorted_years) // 2]
+# 2012 - 2017
 second_half_years = sorted_years[len(sorted_years) // 2:]
 
 print_divider('=', 'Question 2.2: Team Insterests in Two Periods')
@@ -125,7 +127,7 @@ for team in teams:
     team_data = get_team_data(data, team)
 
     # Fisrt half
-    team_first_data = get_filtered_data(team_data, key='year', values=fisrt_half_years)
+    team_first_data = get_filtered_data(team_data, key='year', values=first_half_years)
     team_first_titles = get_values(team_first_data, 'title')
     team_first_titles = sorted(team_first_titles)
     team_first_freq = get_ranked_keyword_frequency(team_first_titles, keywords)
@@ -136,9 +138,9 @@ for team in teams:
     team_second_freq = get_ranked_keyword_frequency(team_second_titles, keywords)
 
     print_divider('-', str(team))
-    print('\n2007 - 2011:\n')
+    print('\n2007 - 2011: {} papers published\n'.format(len(team_first_data)))
     for entry in team_first_freq:
         print('{}: {}'.format(entry[0], entry[1]))
-    print('\n2011 - 2017:\n')
+    print('\n2012 - 2017: {} papers published\n'.format(len(team_second_data)))
     for entry in team_second_freq:
         print('{}: {}'.format(entry[0], entry[1]))
